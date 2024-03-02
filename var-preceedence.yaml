@@ -1,7 +1,7 @@
 - name: preceedence of variable
   hosts: test
-  vars:
-    Name: abc play
+  # vars:
+  #   Name: abc play
   
   #vars_files:
   #  var.yaml
