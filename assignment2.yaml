@@ -15,3 +15,4 @@
     when: out.stat.exists == false
     ansible.builtin.file:
       path: /app
+      state: directory
