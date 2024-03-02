@@ -13,6 +13,6 @@
   tasks:
   - name: print task var
     vars: 
-    Name: task var
+      Name: task var
     ansible.builtin.debug:
       msg: " Iam printing {{Name}}"
