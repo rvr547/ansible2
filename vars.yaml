@@ -1,0 +1,11 @@
+- name: Variables
+  hosts: test
+  #playlevel declaration
+  vars:
+    COURSE: DevOps
+    DURATION: 3 months
+  tasks:
+  - name: print vars
+    ansible.builtin.debug:
+      mag: "Hello world"
+      msg: "I have joined {{COURSE}} and its duration is {{DURATION}}"

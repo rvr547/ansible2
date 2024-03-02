@@ -1,0 +1,15 @@
+- name: Vars at task level
+  hosts: test
+  vars:
+      HNo: 123
+      street: xyz
+  tasks:
+  - name: vars at task one
+    ansible.builtin.debug:
+      msg: "House number {{HNo}} , street {{abc}}"
+  - name: vars at task one
+    vars:
+      HNo: 123
+      street: abc
+    ansible.builtin.debug:
+      msg: "House number {{HNo}} , street {{abc}}"
