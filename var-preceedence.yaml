@@ -9,6 +9,7 @@
   vars_prompt:
   - name: Name
     prompt: Enter Name
+    private: false
   
   tasks:
   - name: print task var
