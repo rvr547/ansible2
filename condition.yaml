@@ -1,0 +1,9 @@
+- name: while condition
+  hosts: localhost
+  vars:
+    Name: DevOps
+  tasks:
+  while: Name == DevOps
+  - name: test condition
+    ansible.builtin.debug:
+     msg: "I am {{Name}}"

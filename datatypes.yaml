@@ -16,6 +16,9 @@
       msg: "{{Name}}"
   - name: print datatypes
     ansible.builtin.debug:
+      msg: "{{AGE}}"
+  - name: print datatypes
+    ansible.builtin.debug:
       msg: "{{isDevOps}}"
   - name: print datatypes
     ansible.builtin.debug:
