@@ -1,0 +1,25 @@
+- name: datatypes
+  hosts: localhost
+  vars:
+    AGE: 30
+    Name: Vandana
+    isDevOps: true
+    skills:
+    - abc
+    - efg
+    Exp:
+     abc: 2
+     efg: 5
+  tasks:
+  - name: print datatypes
+    ansible.builtin.debug:
+      msg: "{{Name}}"
+  - name: print datatypes
+    ansible.builtin.debug:
+      msg: "{{isDevOps}}"
+  - name: print datatypes
+    ansible.builtin.debug:
+      msg: "{{skills}}"
+  - name: print datatypes
+    ansible.builtin.debug:
+      msg: "{{Exp}}"
