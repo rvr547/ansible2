@@ -6,10 +6,10 @@
   #vars_files:
   #  var.yaml
   
-  vars_prompt:
-  - name: Name
-    prompt: Enter Name
-    private: false
+  # vars_prompt:
+  # - name: Name
+  #   prompt: Enter Name
+  #   private: false
   
   tasks:
   - name: print task var
@@ -21,5 +21,5 @@
 #1.args
 #2.task
 #3. files
-#4.
+#4.prompt
 
