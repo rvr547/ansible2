@@ -1,0 +1,11 @@
+- name: check if directory exists or not
+  hosts: localhost
+  tasks:
+  - name: check condition
+    ansible.builtin.stat:
+      path: /app
+    register: out
+  
+  - name: print status
+    ansible.builtin.debug:
+     msg: "{{out}}"
