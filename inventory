@@ -1,8 +1,10 @@
+
+
 [test]
 172.31.29.131
 
 
-[course_details]
+[test:vars]
 COURSE = dEVoPS
 DURATION = 3 months
 NAME= Vandana
