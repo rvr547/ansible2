@@ -1,7 +1,7 @@
 - name: while condition
   hosts: localhost
   vars:
-    Name: DevOps
+    Name: DevOps1
   tasks:
   - name: test condition
     ansible.builtin.debug:
