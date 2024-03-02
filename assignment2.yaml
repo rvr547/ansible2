@@ -8,4 +8,4 @@
   
   - name: print status
     ansible.builtin.debug:
-     msg: "{{out.stat.exixts}}"
+     msg: "{{out.stat.exists}}"
