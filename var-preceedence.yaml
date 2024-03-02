@@ -1,0 +1,18 @@
+- name: preceedence of variable
+  hosts: test
+  vars:
+    Name: abc play
+  
+  vars_files:
+    var.yaml
+  
+  vars_prompt:
+  - name: Name
+    prompt: Enter Name
+  
+  tasks:
+  vars: 
+    Name: task var
+  - name: print task var
+    ansible.builtin.debug:
+      msg: " Iam printing {{Name}}"
