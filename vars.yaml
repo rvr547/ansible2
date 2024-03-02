@@ -8,4 +8,6 @@
   - name: print vars
     ansible.builtin.debug:
       mag: "Hello world"
+  - name: print vars2
+    ansible.builtin.debug:
       msg: "I have joined {{COURSE}} and its duration is {{DURATION}}"
