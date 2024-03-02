@@ -1,6 +1,6 @@
 - name: user exists or not
   hosts: localhost
-  become: yes
+  
   tasks:
   - name: user exists or not
     ansible.builtin.command: id roboshop
@@ -12,6 +12,7 @@
      msg: "{{output.rc}}"
 
   - name: create user
+    become: yes
     when: output.rc == 1
     ansible.builtin.user:
       name: roboshop
