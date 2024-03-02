@@ -3,9 +3,9 @@
   vars:
     Name: DevOps1
   tasks:
-    when: Name == "DevOps"
   - name: test condition
     ansible.builtin.debug:
      msg: "I am {{Name}}"
+    when: Name == "DevOps"
     
   
